@@ -1,0 +1,210 @@
+.section-cta {
+  overflow: hidden;
+  position: relative;
+  padding: 0 2rem 15rem 2rem;
+
+  &__container {
+    max-width: 180rem;
+    margin: 0 auto;
+  }
+}
+
+.why-tango {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4.3rem 20rem 0 4.5rem;
+  background: url("./../img/section-cta/why-tango-dots.png"),
+    linear-gradient(90deg, #242433 0%, #713fa9 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-radius: 2.5rem;
+
+  @media screen and (max-width: 1600px) {
+    padding: 4.3rem 10rem 0 4.5rem;
+  }
+  @media screen and (max-width: 1300px) {
+    padding: 1rem 2rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 4rem 4rem 2rem 4.5rem;
+  }
+
+  &__text-container {
+    flex: 0 0 58%;
+
+    @media screen and (max-width: 1300px) {
+      flex: 0 0 53%;
+    }
+    h3 {
+      color: #fff;
+      font-size: 6.2rem;
+      font-weight: 500;
+      margin-bottom: 7.7rem;
+
+      @media screen and (max-width: 1600px) {
+        margin-bottom: 5rem;
+      }
+
+      @media screen and (max-width: 1300px) {
+        margin-bottom: 3rem;
+      }
+
+      @media screen and (max-width: 900px) {
+        width: 150%;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.36;
+      margin-bottom: 6rem;
+
+      @media screen and (max-width: 1300px) {
+        font-size: 2rem;
+        height: 15rem;
+      }
+
+      @media screen and (max-width: 900px) {
+        font-size: 1.7rem;
+      }
+
+      @media screen and (max-width: 740px) {
+        font-size: 1.4rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: 2.1rem;
+        margin-bottom: 2rem;
+        height: unset;
+      }
+    }
+
+    .btn--join {
+     font-size: 3rem;
+    }
+
+
+  }
+
+  &__phone-video-container {
+    flex: 0 0 40rem;
+    z-index: 10;
+
+    @media screen and (max-width: 1300px) {
+      flex: 0 0 30rem;
+      position: relative;
+      bottom: -6rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex: 0 0 25rem;
+      bottom: -8rem;
+    }
+
+    @media screen and (max-width: 740px) {
+      flex: 0 0 23rem;
+      bottom: -10.3rem;
+      right: 0;
+    }
+
+    @media screen and (max-width: 680px) {
+      flex: 0 0 17rem;
+      bottom: -17.2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      flex: 1;
+      bottom: -2rem;
+    }
+
+    div:first-of-type {
+      overflow: hidden;
+      position: relative;
+
+      video {
+        position: absolute;
+        z-index: -1;
+        width: 90%;
+        height: 150%;
+        top: 2rem;
+        right: 2rem;
+        border-radius: 5rem;
+        object-fit: cover;
+
+        @media screen and (max-width: 1300px) {
+          width: 92%;
+          height: 150%;
+          top: 0;
+          right: 1rem;
+        }
+
+        @media screen and (max-width: 900px) {
+          right: 0.9rem;
+        }
+
+        @media screen and (max-width: 600px) {
+          top: 2rem;
+        }
+      }
+    }
+
+    img,
+    picture {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__stars {
+    position: absolute;
+    right: 4rem;
+    bottom: -6rem;
+    z-index: 20;
+    width: 75rem;
+
+    @media screen and (max-width: 1600px) {
+      right: -1rem;
+      bottom: 0;
+      width: 60rem;
+    }
+
+    @media screen and (max-width: 1300px) {
+      right: -13rem;
+      bottom: -1rem;
+      width: 56rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      right: -11rem;
+      bottom: 3rem;
+      width: 46rem;
+    }
+
+    @media screen and (max-width: 740px) {
+      right: -10rem;
+      bottom: 6rem;
+      width: 41rem;
+    }
+
+    @media screen and (max-width: 680px) {
+      right: -7rem;
+      bottom: 16rem;
+      width: 28rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      right: -21rem;
+    bottom: -3rem;
+    width: 80rem;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.section-about {
+  padding: 0 2rem;
+  margin-bottom: 6rem;
+  &__slider {
+    max-width: 180rem;
+    margin-bottom: 15rem;
+    user-select: none;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: var(--swiper-navigation-top-offset, 56%);
+      color: #fff;
+      padding: 6rem;
+      border-radius: 50%;
+      background-color: rgba(36, 36, 51, 0.8);
+    }
+  }
+
+  p:first-of-type {
+    color: #242433;
+    text-align: center;
+    font-size: 4.4rem;
+    max-width: 148rem;
+    margin: 0 auto 5.5rem auto;
+  }
+
+  p:nth-of-type(2) {
+    color: #242433;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36;
+    max-width: 100rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1300px) {
+      font-size: 3.6rem;
+    }
+  }
+}

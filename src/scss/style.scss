@@ -1,0 +1,19 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
+
+@import 'components/btn';
+
+@import "layouts/header";
+@import "layouts/section-hero";
+@import "layouts/section-cta";
+@import "./../../node_modules/swiper/swiper.scss";
+@import "./../../node_modules/swiper/modules/navigation.scss";
+@import "./../../node_modules/swiper/modules/autoplay.scss";
+@import "layouts/section-about";
+@import "layouts/section-benefits";
+@import "layouts/section-terms";
+@import "layouts/footer";

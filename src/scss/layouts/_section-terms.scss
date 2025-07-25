@@ -1,0 +1,46 @@
+.section-terms {
+  padding: 13rem 2rem 5rem 2rem;
+  article {
+    max-width: 135rem;
+    margin: 0 auto;
+
+    h1 {
+      color: #242433;
+      font-size: 4.4rem;
+      font-weight: 500;
+      margin-bottom: 5.5rem;
+    }
+
+    p {
+      color: #000;
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.36;
+
+      &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+      }
+
+      &:first-of-type {
+        margin-bottom: 8rem;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      padding-left: 2rem;
+      list-style: disc;
+      margin-bottom: 1.5rem;
+
+      li {
+        color: #000;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 1.36;
+      }
+    }
+  }
+}
