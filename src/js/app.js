@@ -10,12 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const VideoElement = document.querySelector(".section-hero__bg-video");
   const sectionHero = document.querySelector(".section-hero");
 
-
   //Видео начинается только если полностью загрузилось, до этого момента показывается заглушка
   function checkforVideo() {
     var b = setInterval(() => {
-      if (VideoElement.readyState >= 3) {
-        console.log("video loaded");
+      if (VideoElement?.readyState >= 3) {
         VideoElement.style.display = "block";
         sectionHero.style.background = "none";
 
@@ -23,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, 500);
   }
-
 
   //Слайдеры
   new Swiper(".section-about__slider", {
@@ -84,14 +81,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-
   // "Одометр на GSAP"
-  const registeredUsersText = document.querySelector(
-    ".section-hero__stat-text--registered-users"
-  );
-  const activeUsersText = document.querySelector(
-    ".section-hero__stat-text--active-users"
-  );
+  const registeredUsersText = document.querySelector(".section-hero__stat-text--registered-users");
+  const activeUsersText = document.querySelector(".section-hero__stat-text--active-users");
 
   // Задать конечные числа на статистиках
   const registeredUsers = {

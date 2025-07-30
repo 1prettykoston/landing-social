@@ -1,8 +1,22 @@
 .header {
-  padding: 2.7rem 2rem 1.9rem 2rem;
-  border-bottom: 1px solid rgba(152, 152, 152, 0.3);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2.7rem 2rem 2rem 2rem;
+
+  z-index: 10;
+
   &__container {
     max-width: 180rem;
     margin: 0 auto;
+  }
+
+  &--terms {
+    border-bottom: 1px solid rgba(152, 152, 152, 0.3);
+
+    .header__logo-wrap svg path {
+      fill: #000;
+    }
   }
 }
